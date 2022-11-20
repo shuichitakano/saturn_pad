@@ -2,6 +2,16 @@ CyberStickUSB2SegaSaturn
 ----
 サイバースティック(USB)をセガサターンに接続するためのアダプタです。
 
+## 材料
+- Raspberry Pi Pico x 1
+- セガサターンコントローラーケーブル x 1
+- 抵抗
+  - 18K x 7
+  - 10K x 1
+  - 4.7K x 1
+
+## 配線
+
     SS_VCC(1) - PICO_VBUS(40)
     SS_D1(2)  - PICO_GP2(4)  - 18K - GND
     SS_D0(3)  - PICO_GP3(5)  - 18K - GND
@@ -12,4 +22,5 @@ CyberStickUSB2SegaSaturn
     SS_D2(8)  - PICO_GP8(11) - 18K - GND
     SS_GND(9) - PICO_GND(3, 8, 13, ...)
 
+## 備考
 セガサターンに接続しつつPC等のUSBに接続したりすると、どちらかにダメージを与える可能性があるので気をつけてください。
